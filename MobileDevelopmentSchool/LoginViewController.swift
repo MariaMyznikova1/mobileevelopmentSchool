@@ -9,22 +9,30 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var loginView: UIView!
+    @IBOutlet weak var passwordView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        view.alpha = 0.5
-        view.backgroundColor = .black
-        
-        self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
-
-
-        
-    //Do any additional setup after loading the view.
-        
+        standardTextFieldBackgroundUpdate(backgroundView: loginView)
+        standardTextFieldBackgroundUpdate(backgroundView: passwordView)
     }
 
-
+    func standardTextFieldBackgroundUpdate(backgroundView: UIView) {
+        updateView(view: backgroundView,
+                   borderWidth: 2.0,
+                   borderColor: UIColor.black.cgColor,
+                   cornerRadius: 10.0,
+                   backgroundColor: UIColor(red: 0.769, green: 0.769, blue: 0.769, alpha: 1))
+    }
+    
+    func updateView(view: UIView, borderWidth: CGFloat, borderColor: CGColor, cornerRadius: CGFloat, backgroundColor: UIColor) {
+        view.layer.cornerRadius = cornerRadius
+        view.layer.borderWidth = borderWidth
+        view.layer.borderColor = borderColor
+        view.backgroundColor = backgroundColor
+        
+    }
 }
 
