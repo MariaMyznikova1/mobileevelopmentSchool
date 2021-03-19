@@ -13,6 +13,7 @@
 		E80BD53625FF8E3600E5C65C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80BD53525FF8E3600E5C65C /* Assets.xcassets */; };
 		E80BD53925FF8E3600E5C65C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80BD53725FF8E3600E5C65C /* LaunchScreen.storyboard */; };
 		E8877EA026022D8E00E68439 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8877E9F26022D8E00E68439 /* LoginViewController.swift */; };
+		E8FE7825260390020022DD4B /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FE7824260390020022DD4B /* StyledTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E80BD53825FF8E3600E5C65C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E80BD53A25FF8E3600E5C65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8877E9F26022D8E00E68439 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E8FE7824260390020022DD4B /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E80BD52C25FF8E2E00E5C65C /* AppDelegate.swift */,
 				E80BD52E25FF8E2E00E5C65C /* SceneDelegate.swift */,
 				E8877E9F26022D8E00E68439 /* LoginViewController.swift */,
+				E8FE7824260390020022DD4B /* StyledTextField.swift */,
 				E80BD53225FF8E2E00E5C65C /* Main.storyboard */,
 				E80BD53525FF8E3600E5C65C /* Assets.xcassets */,
 				E80BD53725FF8E3600E5C65C /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				E8877EA026022D8E00E68439 /* LoginViewController.swift in Sources */,
 				E80BD52D25FF8E2E00E5C65C /* AppDelegate.swift in Sources */,
+				E8FE7825260390020022DD4B /* StyledTextField.swift in Sources */,
 				E80BD52F25FF8E2E00E5C65C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

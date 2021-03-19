@@ -32,35 +32,20 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGC-gq-E1S">
-                                        <rect key="frame" x="16" y="366" width="382" height="70"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhQ-SK-PAm">
-                                                <rect key="frame" x="24" y="0.0" width="334" height="70"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="ah2-gn-cck"/>
-                                            <constraint firstAttribute="trailing" secondItem="nhQ-SK-PAm" secondAttribute="trailing" constant="24" id="lMn-Fd-zbL"/>
-                                            <constraint firstItem="nhQ-SK-PAm" firstAttribute="leading" secondItem="kGC-gq-E1S" secondAttribute="leading" constant="24" id="qQn-1T-sRn"/>
-                                            <constraint firstItem="nhQ-SK-PAm" firstAttribute="top" secondItem="kGC-gq-E1S" secondAttribute="top" id="tfn-VF-pNH"/>
-                                            <constraint firstAttribute="bottom" secondItem="nhQ-SK-PAm" secondAttribute="bottom" id="ugS-yJ-mRN"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7s4-Xn-feP">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7s4-Xn-feP">
                                         <rect key="frame" x="16" y="454" width="382" height="70"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cky-Cz-Dr4">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cky-Cz-Dr4" customClass="StyledTextField" customModule="MobileDevelopmentSchool" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="0.0" width="334" height="70"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -94,18 +79,23 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhQ-SK-PAm" customClass="StyledTextField" customModule="MobileDevelopmentSchool" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="361" width="334" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40739555339902467" green="0.40739555339902467" blue="0.40739555339902467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="kGC-gq-E1S" secondAttribute="trailing" constant="16" id="6TG-8U-BkE"/>
-                                    <constraint firstItem="kGC-gq-E1S" firstAttribute="top" secondItem="qil-2T-l91" secondAttribute="bottom" constant="76" id="6pq-Qy-C4c"/>
                                     <constraint firstAttribute="trailing" secondItem="Ua8-cW-x3S" secondAttribute="trailing" constant="16" id="8YY-yy-gz8"/>
                                     <constraint firstItem="qil-2T-l91" firstAttribute="leading" secondItem="qVc-Ng-WOU" secondAttribute="leading" constant="16" id="9en-3V-J9v"/>
                                     <constraint firstItem="Ua8-cW-x3S" firstAttribute="leading" secondItem="qVc-Ng-WOU" secondAttribute="leading" constant="16" id="BJx-kU-h5n"/>
                                     <constraint firstItem="HDn-1x-PDq" firstAttribute="leading" secondItem="qVc-Ng-WOU" secondAttribute="leading" id="Cxo-U4-Hhm"/>
                                     <constraint firstItem="7s4-Xn-feP" firstAttribute="leading" secondItem="qVc-Ng-WOU" secondAttribute="leading" constant="16" id="DN8-We-ZZL"/>
                                     <constraint firstAttribute="trailing" secondItem="7s4-Xn-feP" secondAttribute="trailing" constant="16" id="EAO-Vu-bWO"/>
-                                    <constraint firstItem="7s4-Xn-feP" firstAttribute="top" secondItem="kGC-gq-E1S" secondAttribute="bottom" constant="18" id="NET-uR-kGF"/>
                                     <constraint firstItem="HDn-1x-PDq" firstAttribute="top" secondItem="Jm7-Ii-KOy" secondAttribute="bottom" constant="15" id="Rid-6z-14O"/>
                                     <constraint firstItem="Jm7-Ii-KOy" firstAttribute="top" relation="lessThanOrEqual" secondItem="7s4-Xn-feP" secondAttribute="bottom" priority="998" constant="223" id="SFy-rs-yar"/>
                                     <constraint firstItem="Ua8-cW-x3S" firstAttribute="top" secondItem="qVc-Ng-WOU" secondAttribute="top" constant="135" id="Scb-Mh-dJJ"/>
@@ -114,7 +104,6 @@
                                     <constraint firstAttribute="trailing" secondItem="Jm7-Ii-KOy" secondAttribute="trailing" id="WNB-Uh-POQ"/>
                                     <constraint firstItem="Jm7-Ii-KOy" firstAttribute="leading" secondItem="qVc-Ng-WOU" secondAttribute="leading" id="cMI-bo-E6i"/>
                                     <constraint firstAttribute="trailing" secondItem="HDn-1x-PDq" secondAttribute="trailing" id="h8b-B5-DSt"/>
-                                    <constraint firstItem="kGC-gq-E1S" firstAttribute="leading" secondItem="qVc-Ng-WOU" secondAttribute="leading" constant="16" id="miv-p8-scM"/>
                                     <constraint firstItem="qil-2T-l91" firstAttribute="top" secondItem="Ua8-cW-x3S" secondAttribute="bottom" constant="26" id="qoj-Ym-S49"/>
                                 </constraints>
                             </view>
@@ -129,7 +118,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginView" destination="kGC-gq-E1S" id="P1B-kx-Uge"/>
+                        <outlet property="loginButton" destination="Jm7-Ii-KOy" id="0oV-7o-SHK"/>
+                        <outlet property="loginTextField" destination="nhQ-SK-PAm" id="HaO-tj-Jhj"/>
                         <outlet property="passwordView" destination="7s4-Xn-feP" id="1Z0-ix-ksk"/>
                     </connections>
                 </viewController>
@@ -138,6 +128,14 @@
             <point key="canvasLocation" x="-198.55072463768118" y="93.080357142857139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Cky-Cz-Dr4">
+            <size key="intrinsicContentSize" width="148" height="30.333333333333332"/>
+        </designable>
+        <designable name="nhQ-SK-PAm">
+            <size key="intrinsicContentSize" width="57.333333333333336" height="30.333333333333332"/>
+        </designable>
+    </designables>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
